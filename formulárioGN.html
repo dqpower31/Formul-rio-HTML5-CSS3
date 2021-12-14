@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | GN</title>
+    <style>
+body {font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(79, 158, 158);
+}
+
+.box{ color: azure;
+position: absolute;
+top: 40% ;
+left: 45% ;
+transform: translate(-40%,-40%);
+background-color: rgba(0,0,0,0.3);
+padding: 15px;
+border-radius: 20px;
+width: 35%;
+}
+
+fieldset{
+    border: 5px solid rgb(60, 245, 60);
+    border-radius: 10px;
+}
+
+legend{
+    border: 1.5px solid greenyellow;
+    padding: 10px;
+    text-align: center;
+    background-image: linear-gradient(to right,rgb(60, 245, 60),rgb(3, 22, 9));
+    border-radius: 7px;
+}
+
+.inputbox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+#data_nascimento{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(3, 22, 9);
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#submit{
+    background-image: linear-gradient(to right,rgb(5, 27, 5),rgb(3, 22, 9));
+    width: 100%;
+    border: radius 12px;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: azure;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Formulário de Clientes</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome">Nome Completo</label>
+                </div>
+                <br>   
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email">Email</label>
+                </div>
+                <br>   
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone">Telefone</label>    
+                </div>
+            
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="outros" name="genero" value="outros" required>
+                <label for="outros">Outros</label>
+
+                <br><br>
+
+                <div class="inputBox">
+                    <label for="data_nascimento"><b>Data de Nascimento:</b></label>  
+                    <input type="date" name="data_nascimento" id="data_nascimento" required>
+                </div>
+
+                <br>
+
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado">Estado</label>
+                </div>
+                <br><br>     
+                    <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade">Cidade</label> 
+                </div>  
+                <br>  
+                    <div class="inputBox">
+                    <input type="text" name="endereco completo" id="endereco completo" class="inputUser" required>
+                    <label for="endereco completo">Endereço Completo</label>
+                </div>
+                <br>
+                <input type="submit"  name="submit" id="submit"> 
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
